@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>quizapp</title>
+    <script src="script1.js"></script>
+    <link rel="stylesheet" href="style1.css">
+    <!--Bootstrap file-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+</head>
+<body onclick="showQuetion()">
+    <div class="progress">
+        <div class="progress-bar" id="progress" role="progressbar" style="width: 0%;" >25%</div>
+    </div>
+    
+    <div class="container">
+        <div class="language ">
+            <img class="app" src="img/Group 8.png" >
+            <span class="span" onclick="toQuetion()" >HTML</span>
+            <span class="span">CSS</span>
+            <span class="span">JS</span>
+            <span class="span">JAVA</span>
+
+        </div>
+        <div class="quetions1" id="quetion" >
+            
+           <div><img class="background" src="img/bg b.png"></div> 
+           <span class="h2text"><b>Welcome To the <br>The Awesome HTML Quiz</b></span>          
+
+        </div> 
+
+        <div class="quetions" id="questionBody" style="display:none;">
+
+            <h5 id ="questionText">Frage</h5>
+        
+            <div class="card pointer mb-2" onclick="answer('answer_1')">
+               <div class="card-body" >
+                <b class="bgcolor" >A</b><span class="margin" id ="answer_1">Antwort</span>
+               </div>
+            </div>
+        
+            <div class="card pointer mb-2" onclick="answer('answer_2')">
+              <div class="card-body">
+               <b class="bgcolor" id="color" >B</b><span class="margin" id ="answer_2">Antwort</span>
+              </div>
+            </div>
+        
+            <div class="card pointer mb-2" onclick="answer('answer_3')">
+              <div class="card-body">
+               <b class="bgcolor" id="color" >C</b><span class="margin" id ="answer_3">Antwort</span>
+              </div>
+            </div>
+        
+            <div class="card pointer mb-2" onclick="answer('answer_4')">
+              <div class="card-body">
+               <b class="bgcolor" id="color" >D</b><span class="margin" id ="answer_4">Antwort</span>
+              </div>
+            </div>
+             
+             <div class="inout">
+                <button class="round" onclick="backQuestion()" id="nextbutten1" disabled><</button>
+                <button class="round" onclick="nextQuestion()" id="nextbutten" disabled>></button>
+            </div>
+             
+        </div>  
+
+        <div class="endscreen" id="endscreen" style="display: none;" >
+            <div class="kreis-bg">
+                
+                <div><img class="endbild" src="img/Group 5.png" ></div>
+                <div class="center"> 
+                    <span><b>COMPLETE <br> HTML QUIZ</b></span>
+                    <br>
+                    <span> <b class="blue">YOUR SCORE</b> <b id="richtigeFragen">10</b>/<b id="zahlDerFragen">10</b></span>
+                    <br>
+                    <span class="hover">SHARE</span>
+                    <br>
+                    <span onclick="replay()" class="hover">REPLAY</span>
+
+                </div>
+               
+                
+            </div>
+            
+            
+        </div>
+      
+
+    
+    </div>
+
+    
+
+    </div> 
+
+    
+    
+        
+    
+</body>
+</html>

@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <li id="link"></li>
+    <input type="text" name="" id="input">
+    <button onclick="save()">speichern</button>
+
+
+
+    <script>
+        let todos=[];
+
+        function save(){
+        
+        let zeigen = document.getElementById('link');
+        todos.push(zeigen,todos);
+
+        for(i=0;i<todos.length;i++){
+            zeigen.innerHTML+=`${todos[i]}`
+        }
+        document.getElementById('input').value;
+        
+
+        }
+    </script>
+    
+</body>
+</html>
