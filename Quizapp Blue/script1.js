@@ -67,6 +67,7 @@ function showQuetion() {
 
     }
 }
+//asdfdjfhlsdkafgsdakfglsdkfglkdjsfglsdjkf
 
 function progress(){
     let prozent = (currentQuestion + 1) / questions.length;
